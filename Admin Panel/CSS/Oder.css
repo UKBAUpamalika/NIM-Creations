@@ -1,0 +1,136 @@
+/* Code By Webdevtrick ( https://webdevtrick.com ) */
+* {
+    box-sizing: border-box;
+  }
+   
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
+   
+  body {
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+   
+  .TABLE {
+   
+    min-width: 100vw;
+    width: auto;
+    -webkit-box-flex: 1;
+            flex: 1;
+    display: grid;
+    border-collapse: collapse;
+    grid-template-columns: 
+      minmax(70px, 1fr)
+      minmax(100px, 1.67fr)
+      minmax(150px, 1.67fr)
+      minmax(150px, 1.67fr)
+      minmax(150px, 1.67fr)
+      minmax(250px, 1.67fr)
+      minmax(100px, 1.67fr)
+      minmax(150px, 3.33fr)
+      minmax(300px, 3.33fr)
+     
+      
+  }
+   
+  thead,
+  tbody,
+  .TR {
+    display: contents;
+  }
+   
+  .TH{
+    padding-top: 15px;
+    
+    
+    
+  }
+   
+  .TH {
+    position: relative;
+    position: sticky !important;
+  
+    top: 0;
+    background: #aeaeae;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.1rem;
+    color: white;
+    
+    
+  }
+   
+  TH:last-child {
+    border: 0;
+  }
+   
+  .resize-handle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0;
+    width: 3px;
+    cursor: col-resize;
+  }
+   
+  .resize-handle:hover,
+  .header--being-resized .resize-handle {
+    opacity: 0.5;
+  }
+   
+  .TH:hover .resize-handle {
+    opacity: 0.3;
+  }
+   
+  .TD {
+    padding-top: 22px;
+    
+   
+    color: #808080;
+  }
+   
+  tr:nth-child(even) .TD {
+    background: #f8f6ff;
+  }
+
+  body{
+    padding:20px 20px;
+  }
+  
+  .results tr[visible='false'],
+  .no-result{
+    display:none;
+  }
+  
+  .results tr[visible='true']{
+    display:table-row;
+  }
+  
+  .counter{
+    padding:8px; 
+    color:#ccc;
+  }
+
+  .my-custom-scrollbar {
+    position: relative;
+    height: 400px;
+    overflow: auto;
+  }
+  
+  .table-wrapper-scroll-y {
+    display: block;
+  }
+  
+  
+  
+  
+  .thd {
+    background: white;
+    position: sticky;
+    top: 0;
+    background-color: #ffe3c4;
+  }
